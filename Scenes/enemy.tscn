@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dthqefattf83u"]
+
+[ext_resource type="Texture2D" uid="uid://d1bj0nunncar3" path="res://Assets/Sprites/hitler.png" id="1_itrqs"]
+[ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_o1gb5"]
+
+[node name="Enemy" type="Node2D"]
+script = ExtResource("1_o1gb5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.56875, 0.56875)
+texture = ExtResource("1_itrqs")
