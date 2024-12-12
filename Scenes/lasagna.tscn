@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://2m58hrj63j8r"]
+
+[ext_resource type="Texture2D" uid="uid://coocksdryuwjd" path="res://Assets/Sprites/8a3243142da3051cf64a4e1bb9bf2e27.jpg" id="1_0y0wk"]
+[ext_resource type="Script" path="res://Scripts/lasagna.gd" id="1_q4q5t"]
+[ext_resource type="Texture2D" uid="uid://b4cmp44g7agjk" path="res://Assets/Sprites/stick.png" id="3_2m3u5"]
+[ext_resource type="Script" path="res://Scripts/weapon.gd" id="4_qyvjg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3u2x7"]
+
+[node name="Lasagna" type="CharacterBody2D"]
+script = ExtResource("1_q4q5t")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -1.42109e-14)
+scale = Vector2(0.0949515, 0.0949515)
+texture = ExtResource("1_0y0wk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(2.27549, 2.27549)
+shape = SubResource("CircleShape2D_3u2x7")
+
+[node name="weapon" type="Node2D" parent="."]
+position = Vector2(-18, 22)
+script = ExtResource("4_qyvjg")
+
+[node name="Sprite2D" type="Sprite2D" parent="weapon"]
+scale = Vector2(0.0193157, 0.0193157)
+texture = ExtResource("3_2m3u5")
+
+[node name="tip" type="Node2D" parent="weapon/Sprite2D"]
+position = Vector2(1967.31, -103.543)
+scale = Vector2(1.33286, 0.610601)

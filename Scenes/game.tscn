@@ -1,16 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://dd23ksaq75npu"]
+[gd_scene load_steps=6 format=3 uid="uid://dd23ksaq75npu"]
 
-[ext_resource type="PackedScene" uid="uid://x02ecvsley7v" path="res://Scenes/player.tscn" id="1_0igtc"]
 [ext_resource type="Script" path="res://Scripts/game.gd" id="1_nahmw"]
+[ext_resource type="PackedScene" uid="uid://2m58hrj63j8r" path="res://Scenes/lasagna.tscn" id="2_7yafw"]
 [ext_resource type="PackedScene" uid="uid://btec0iqmh51n" path="res://Scenes/bullet_manager.tscn" id="2_s6f84"]
+[ext_resource type="PackedScene" uid="uid://crh7t13advctp" path="res://Scenes/crosshair.tscn" id="2_ufukl"]
 [ext_resource type="PackedScene" uid="uid://dthqefattf83u" path="res://Scenes/enemy.tscn" id="3_ihjfg"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_nahmw")
 
-[node name="BulletManager" parent="." instance=ExtResource("2_s6f84")]
+[node name="crosshair" parent="." instance=ExtResource("2_ufukl")]
 
-[node name="Player" parent="." instance=ExtResource("1_0igtc")]
+[node name="Lasagna" parent="." instance=ExtResource("2_7yafw")]
+position = Vector2(824, 402)
+
+[node name="BulletManager" parent="." instance=ExtResource("2_s6f84")]
 
 [node name="Enemy" parent="." instance=ExtResource("3_ihjfg")]
 position = Vector2(263, 237)
+
+[connection signal="left_click" from="Lasagna" to="BulletManager" method="_on_lasagna_left_click"]
