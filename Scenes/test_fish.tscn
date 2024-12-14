@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b274woo5treol"]
+
+[ext_resource type="Texture2D" uid="uid://33fjdlbnn8ca" path="res://Assets/Sprites/fish.png" id="1_s4k0x"]
+
+[node name="test_fish" type="Sprite2D"]
+scale = Vector2(1.77548, 1.77548)
+texture = ExtResource("1_s4k0x")

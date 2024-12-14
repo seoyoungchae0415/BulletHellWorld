@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://33fjdlbnn8ca"
-path="res://.godot/imported/fish.png-6838232ed3ff3e34340855636bec5c11.ctex"
+uid="uid://cvsptsu4oskig"
+path="res://.godot/imported/sun.png-e3e78fb4ff2c99853b2ad96b6ee4ea93.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/fish.png"
-dest_files=["res://.godot/imported/fish.png-6838232ed3ff3e34340855636bec5c11.ctex"]
+source_file="res://Assets/City_bg/sun.png"
+dest_files=["res://.godot/imported/sun.png-e3e78fb4ff2c99853b2ad96b6ee4ea93.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://33fjdlbnn8ca"
-path="res://.godot/imported/fish.png-6838232ed3ff3e34340855636bec5c11.ctex"
+uid="uid://cs506h6a014kk"
+path="res://.godot/imported/Rivendell_bg.png-507f271c0ef92c8da0141470e560ac22.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/fish.png"
-dest_files=["res://.godot/imported/fish.png-6838232ed3ff3e34340855636bec5c11.ctex"]
+source_file="res://Assets/Sprites/Rivendell_bg.png"
+dest_files=["res://.godot/imported/Rivendell_bg.png-507f271c0ef92c8da0141470e560ac22.ctex"]
 
 [params]
 

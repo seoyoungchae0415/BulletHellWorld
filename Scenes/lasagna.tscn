@@ -8,6 +8,8 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_3u2x7"]
 
 [node name="Lasagna" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_q4q5t")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

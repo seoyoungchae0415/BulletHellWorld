@@ -1,13 +1,22 @@
-[gd_scene load_steps=6 format=3 uid="uid://dd23ksaq75npu"]
+[gd_scene load_steps=8 format=3 uid="uid://dd23ksaq75npu"]
 
 [ext_resource type="Script" path="res://Scripts/game.gd" id="1_nahmw"]
 [ext_resource type="PackedScene" uid="uid://2m58hrj63j8r" path="res://Scenes/lasagna.tscn" id="2_7yafw"]
+[ext_resource type="PackedScene" uid="uid://b274woo5treol" path="res://Scenes/test_fish.tscn" id="2_aa8of"]
 [ext_resource type="PackedScene" uid="uid://btec0iqmh51n" path="res://Scenes/bullet_manager.tscn" id="2_s6f84"]
 [ext_resource type="PackedScene" uid="uid://crh7t13advctp" path="res://Scenes/crosshair.tscn" id="2_ufukl"]
 [ext_resource type="PackedScene" uid="uid://dthqefattf83u" path="res://Scenes/enemy.tscn" id="3_ihjfg"]
+[ext_resource type="Texture2D" uid="uid://cs506h6a014kk" path="res://Assets/Sprites/Rivendell_bg.png" id="7_3t55a"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_nahmw")
+
+[node name="temp_bg" type="Sprite2D" parent="."]
+position = Vector2(960, 538)
+texture = ExtResource("7_3t55a")
+
+[node name="test_fish" parent="." instance=ExtResource("2_aa8of")]
+position = Vector2(1496, 471)
 
 [node name="crosshair" parent="." instance=ExtResource("2_ufukl")]
 

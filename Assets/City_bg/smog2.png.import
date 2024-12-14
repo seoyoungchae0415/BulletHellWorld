@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://33fjdlbnn8ca"
-path="res://.godot/imported/fish.png-6838232ed3ff3e34340855636bec5c11.ctex"
+uid="uid://dfwxrsenuthj3"
+path="res://.godot/imported/smog2.png-40e44afccfdd4252f6786c04f686239c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/fish.png"
-dest_files=["res://.godot/imported/fish.png-6838232ed3ff3e34340855636bec5c11.ctex"]
+source_file="res://Assets/City_bg/smog2.png"
+dest_files=["res://.godot/imported/smog2.png-40e44afccfdd4252f6786c04f686239c.ctex"]
 
 [params]
 
