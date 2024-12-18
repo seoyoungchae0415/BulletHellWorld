@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://2m58hrj63j8r"]
 
-[ext_resource type="Texture2D" uid="uid://coocksdryuwjd" path="res://Assets/Sprites/8a3243142da3051cf64a4e1bb9bf2e27.jpg" id="1_0y0wk"]
 [ext_resource type="Script" path="res://Scripts/lasagna.gd" id="1_q4q5t"]
+[ext_resource type="Texture2D" uid="uid://c4uu2oqy7uefh" path="res://Assets/Sprites/chill_orange.jpg" id="2_aiq2r"]
 [ext_resource type="Texture2D" uid="uid://b4cmp44g7agjk" path="res://Assets/Sprites/stick.png" id="3_2m3u5"]
 [ext_resource type="Script" path="res://Scripts/weapon.gd" id="4_qyvjg"]
 
@@ -14,8 +14,8 @@ script = ExtResource("1_q4q5t")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -1.42109e-14)
-scale = Vector2(0.0949515, 0.0949515)
-texture = ExtResource("1_0y0wk")
+scale = Vector2(0.114624, 0.114624)
+texture = ExtResource("2_aiq2r")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(2.27549, 2.27549)

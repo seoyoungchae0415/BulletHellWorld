@@ -28,4 +28,9 @@ position = Vector2(824, 402)
 [node name="Enemy" parent="." instance=ExtResource("3_ihjfg")]
 position = Vector2(263, 237)
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+rotation = 3.14159
+scale = Vector2(0.00613498, 3646.12)
+
 [connection signal="left_click" from="Lasagna" to="BulletManager" method="_on_lasagna_left_click"]

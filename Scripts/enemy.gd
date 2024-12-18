@@ -4,8 +4,6 @@ extends Node2D
 @onready var lasagna: CharacterBody2D = $"../Lasagna"
 @onready var animation_player: AnimationPlayer = $Sprite2D/AnimationPlayer
 
-var rng = RandomNumberGenerator.new()
-
 signal fire_fish
 
 func _ready() -> void:
@@ -13,9 +11,7 @@ func _ready() -> void:
 
 
 func _process(delta: float) -> void:
-	var xpos = rng.randf_range(10, 1000)
-	var ypos = rng.randf_range(10, 600)
-	position = Vector2(xpos, ypos)
+	pass
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
