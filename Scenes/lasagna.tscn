@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://2m58hrj63j8r"]
+
+[ext_resource type="Script" path="res://Scripts/lasagna.gd" id="1_q4q5t"]
+[ext_resource type="Texture2D" uid="uid://c4uu2oqy7uefh" path="res://Assets/Sprites/chill_orange.jpg" id="2_aiq2r"]
+[ext_resource type="Texture2D" uid="uid://b4cmp44g7agjk" path="res://Assets/Sprites/stick.png" id="3_2m3u5"]
+[ext_resource type="Script" path="res://Scripts/weapon.gd" id="4_qyvjg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3u2x7"]
+
+[node name="Lasagna" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_q4q5t")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -1.42109e-14)
+scale = Vector2(0.114624, 0.114624)
+texture = ExtResource("2_aiq2r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(2.27549, 2.27549)
+shape = SubResource("CircleShape2D_3u2x7")
+
+[node name="weapon" type="Node2D" parent="."]
+position = Vector2(-18, 22)
+script = ExtResource("4_qyvjg")
+
+[node name="Sprite2D" type="Sprite2D" parent="weapon"]
+scale = Vector2(0.0193157, 0.0193157)
+texture = ExtResource("3_2m3u5")
+
+[node name="tip" type="Node2D" parent="weapon/Sprite2D"]
+position = Vector2(1967.31, -103.543)
+scale = Vector2(1.33286, 0.610601)
